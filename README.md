@@ -7,7 +7,7 @@ Azure Powershell Module https://docs.microsoft.com/en-us/powershell/azure/instal
 ## Examples:
 
 ### Static HTML Phishing Page
-az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html
+az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
 
 ### Python Flask Redirector
 The redirector acts as a "dumb" redirector unless you modify the variables in application.py. See below.
@@ -19,5 +19,5 @@ HEADER = None
 #HEADER = "X-Aspnet-Version"
 #HEADER_KEY = "1.5"
 
-az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain
+az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --SKU FREE
 

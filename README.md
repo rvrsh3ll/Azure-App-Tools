@@ -14,7 +14,7 @@ az webapp up --location eastus --resource-group mynewresourcegroup --name mynews
 
 Navigate to the Azure App Console and copy the applicationHost.xdt back a directory.
 
-![alt text](images\console.png "Console")
+![alt text](images/console.png "Console")
 
 ### Python Flask Redirector
 The redirector acts as a "dumb" redirector unless you modify the variables in application.py. See below.

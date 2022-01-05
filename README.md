@@ -9,6 +9,13 @@ Azure Powershell Module https://docs.microsoft.com/en-us/powershell/azure/instal
 ### Static HTML Phishing Page
 az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
 
+### IIS Redirector
+az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
+
+Navigate to the Azure App Console and copy the applicationHost.xdt back a directory.
+
+![alt text](images\console.png "Console")
+
 ### Python Flask Redirector
 The redirector acts as a "dumb" redirector unless you modify the variables in application.py. See below.
 

@@ -6,6 +6,16 @@ Azure Powershell Module https://docs.microsoft.com/en-us/powershell/azure/instal
 
 ## Examples:
 
+### Dynamic Device Codes
+Original PoC by @MrUn1k0d3r https://gist.github.com/Mr-Un1k0d3r/afef5a80cb72dfeaa78d14465fb0d333.
+
+Dynamically generate device codes on an Azure website. Typically, we have to email a user and the device code has 900 seconds to expire from time of sending the email. By directing the user to a dynamic site, we extend the time we have to recieve tokens based on when the user visits the website and until they sign-in.
+
+Uses FLUX Web3 by defult for CORS-Anywhere so, IP address for sign-in may vary. You may use other services such as Heroku Apps to host Cors-Anywhere. https://github.com/Rob--W/cors-anywhere
+
+az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
+
+![alt text](images/dynamiccode.png "Dynamic Code Generation")
 ### Static HTML Phishing Page
 az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
 

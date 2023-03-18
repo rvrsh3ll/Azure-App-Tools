@@ -77,7 +77,7 @@ Use the Azure Portal to create Azure Linux virtual machine or use the following 
     echo "hello world" > file.txt;ipfs add file.txt
     ```
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled.png)
     
     <aside>
     👉 Note your IPFS file CID for the next section
@@ -101,81 +101,81 @@ Use the Azure Portal to create Azure Linux virtual machine or use the following 
     
 3. Modify code to your campaign
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%201.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%201.png)
     
 4. Change “startsWith” URI, IPFS CID to your site or file, and redirect URL. Save.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%202.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%202.png)
     
 5. Install VSCode Marketplace Extensions
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%203.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%203.png)
     
 6. Sign-in to Azure and follow the instructions.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%204.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%204.png)
     
     <aside>
     👉 Be sure to select your correct subscription if you have multiple
     
     </aside>
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%205.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%205.png)
     
 7. Your post sign-in should look something like this
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%206.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%206.png)
     
 8. Right-click on App Services and select **Create new Web App... Advanced**.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%207.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%207.png)
     
 9. Type a globally unique name for your web app and press **Enter**. The name must be unique across all of Azure and use only alphanumeric characters ('A-Z', 'a-z', and '0-9') and hyphens ('-').
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%208.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%208.png)
     
 10. Select **Create a new resource group**, then enter a name for the resource group, such as something-rg.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%209.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%209.png)
     
 11. Select Node 18 LTS.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2010.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2010.png)
     
 12. Select **Windows** for the operating system.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2011.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2011.png)
     
 13. Select the location you want to serve your app from. For example, East US.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2012.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2012.png)
     
 14. Select **Create new App Service plan**, then enter a name for the plan (such as something-sp), then select **F1 Free** for the pricing tier for testing.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2013.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2013.png)
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2014.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2014.png)
     
 15. For **Select an Application Insights resource for your app**, select **Skip for now** and wait the resources to be created in Azure.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2015.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2015.png)
     
 16. Your app will be created
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2016.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2016.png)
     
 17. In the popup **Always deploy the workspace "yourworkspace" to <app-name>"**, select **Yes**. This way, as long as you're in the same workspace, Visual Studio Code deploys to the same App Service app each time.
 18. You should see your app under your subscription.
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2017.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2017.png)
     
 19. Expand the site drop-down to expose “Application Settings”
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2018.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2018.png)
     
 20. Right-click “Application Settings” and select “Add New Setting”
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2019.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2019.png)
     
 21. Enter `SCM_DO_BUILD_DURING_DEPLOYMENT`
     
@@ -186,24 +186,24 @@ Use the Azure Portal to create Azure Linux virtual machine or use the following 
     
 22. Set to “true”
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2020.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2020.png)
     
 23. Right-click your site and select “Deploy to Web App”
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2021.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2021.png)
     
 24. Select the deployment folder
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2022.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2022.png)
     
 25. Confirm
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2023.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2023.png)
     
 26. Deploying (Will take a few minutes)
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2024.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2024.png)
     
 27. Success
     
-    ![Untitled](Azure%20IPFS%20Dropper%20614e40ec32c34b43a48f872854d67bf6/Untitled%2025.png)
+    ![Untitled](./azure_ipfs_dropper/Untitled%2025.png)

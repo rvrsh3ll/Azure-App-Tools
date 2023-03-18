@@ -20,7 +20,7 @@ az webapp up --location eastus --resource-group mynewresourcegroup --name mynews
 az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
 
 ### Azure IPFS Dropper
-[Setup](./azureipfsdropper.md)]
+![Setup](./azureipfsdropper.md)]
 
 
 

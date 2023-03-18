@@ -19,6 +19,11 @@ az webapp up --location eastus --resource-group mynewresourcegroup --name mynews
 ### Static HTML Phishing Page
 az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
 
+### Azure IPFS Dropper
+[Setup](./azureipfsdropper.md)]
+
+
+
 ### IIS Redirector
 az webapp up --location eastus --resource-group mynewresourcegroup --name mynewsubdomain --html --sku FREE
 

@@ -2,6 +2,8 @@
 
 In my class and previous [webinar](https://enterpriseattack.futuresec.io/initial-access/enterprise-attack-payload-delivery-webcast), I show my methodology for deploying phishing sites and payloads or tool dropping via Azure websites. Microsoft has improved their detections for “malicious” sites with “malware” hosted on them. In an effort to combat these detections and to continue helping clients test their networks against *.azurewebsites.net sites, I’ve created a novel way to host payloads with a NodeJS proxy serving your phishing site or payloads via InterPlanetary File System (IPFS).
 
+👉 Note: IPFS files should be considered public and secured as such
+
 ## Create Azure VM
 
 <aside>

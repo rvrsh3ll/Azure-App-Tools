@@ -6,12 +6,7 @@ In my class and previous [webinar](https://enterpriseattack.futuresec.io/initial
 
 ## Create Azure VM
 
-<aside>
-👉 Note: You will need to replace the values enclosed in angle brackets with the appropriate values for your virtual machine.
-
-</aside>
-
-Use the Azure Portal to create Azure Linux virtual machine or use the following steps to create one  using the Azure CLI tool:
+Use the Azure Portal to create Azure Linux virtual machine or use the following steps to create one:
 
 1. Open a PowerShell Terminal window
 2. Clone Azure-App-Tools

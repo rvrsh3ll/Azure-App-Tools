@@ -27,8 +27,8 @@ Start-Sleep -Seconds 5
 Write-Output "az vm create --resource-group $ResourceGroup --name $vmName --image Ubuntu2204 --public-ip-sku Standard --public-ip-address-dns-name $vmPublicDNSName --admin-username azureuser --ssh-key-values $pubKey"
 az vm create --resource-group $ResourceGroup --name $vmName --image Ubuntu2204 --public-ip-sku Standard --public-ip-address-dns-name $vmPublicDNSName --admin-username azureuser --ssh-key-values $pubKey
 Start-Sleep -Seconds 5
-Write-Output "az vm open-port --port 22,4001 --resource-group $ResourceGroup --name $vmName"
-az vm open-port --port 22,4001 --resource-group $ResourceGroup --name $vmName
+Write-Output "az vm open-port --port 22,80,443,4001 --resource-group $ResourceGroup --name $vmName"
+az vm open-port --port 22,80,443,4001 --resource-group $ResourceGroup --name $vmName
 Start-Sleep -Seconds 5
 Write-Output "az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'apt-get update && apt-get install -y git python3-pip certbot wget apt-transport-https software-properties-common screen'"
 az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'apt-get update && apt-get install -y git python3-pip certbot wget apt-transport-https software-properties-common screen'

@@ -36,8 +36,8 @@ Start-Sleep -Seconds 5
 Write-Output "az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'wget https://dist.ipfs.tech/kubo/v0.18.1/kubo_v0.18.1_linux-amd64.tar.gz'"
 az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'wget -O /home/azureuser/kubo.tar.gz https://dist.ipfs.tech/kubo/v0.18.1/kubo_v0.18.1_linux-amd64.tar.gz'
 Start-Sleep -Seconds 5
-Write-Output "az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'tar -xvzf kubo.tar.gz'"
-az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'tar -xvzf kubo.tar.gz'
+Write-Output "az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'tar -xvzf /home/azureuser/kubo.tar.gz'"
+az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'tar -xvzf /home/azureuser/kubo.tar.gz'
 Start-Sleep -Seconds 5
 Write-Output "az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'sudo bash /home/azureuser/kubo/install.sh'"
 az vm run-command invoke -g $ResourceGroup -n $vmName --command-id RunShellScript --scripts 'sudo bash /home/azureuser/kubo/install.sh'
